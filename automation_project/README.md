@@ -13,10 +13,16 @@ result on the screen, and saves the results to another JSON file.
 | `inventory.json` | List of devices (hostname, IP, type, location, port, check mode) |
 | `network_check.py` | The program that checks each device |
 | `output.json` | Results saved by the program (created when you run it) |
-| `network_inventory.py` | Displays a sample Cisco device inventory and filters operational devices |
-| `restconf_monitor.py` | Reads interface names and enabled status from a Cisco IOS XE router |
-| `interface_automation.py` | Configures and verifies Loopback100 through RESTCONF |
 | `README.md` | This documentation |
+
+The earlier task scripts are kept separately in the repository's `tasks_1_to_3/`
+folder:
+
+| File | What it does |
+| --- | --- |
+| `tasks_1_to_3/network_inventory.py` | Displays a sample Cisco device inventory and filters operational devices |
+| `tasks_1_to_3/restconf_monitor.py` | Reads interface names and enabled status from a Cisco IOS XE router |
+| `tasks_1_to_3/interface_automation.py` | Configures and verifies Loopback100 through RESTCONF |
 
 ## How it works
 
@@ -35,15 +41,16 @@ result on the screen, and saves the results to another JSON file.
 ## Usage
 
 ```sh
+cd automation_project
 python network_check.py
 ```
 
 Run the additional scripts from the repository root:
 
 ```sh
-python network_inventory.py
-python restconf_monitor.py
-python interface_automation.py
+python tasks_1_to_3/network_inventory.py
+python tasks_1_to_3/restconf_monitor.py
+python tasks_1_to_3/interface_automation.py
 ```
 
 Before running either RESTCONF script, set `RESTCONF_USERNAME` and
