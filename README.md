@@ -13,6 +13,9 @@ result on the screen, and saves the results to another JSON file.
 | `inventory.json` | List of devices (hostname, IP, type, location, port, check mode) |
 | `network_check.py` | The program that checks each device |
 | `output.json` | Results saved by the program (created when you run it) |
+| `network_inventory.py` | Displays a sample Cisco device inventory and filters operational devices |
+| `restconf_monitor.py` | Reads interface names and enabled status from a Cisco IOS XE router |
+| `interface_automation.py` | Configures and verifies Loopback100 through RESTCONF |
 | `README.md` | This documentation |
 
 ## How it works
@@ -26,13 +29,25 @@ result on the screen, and saves the results to another JSON file.
 
 ## Requirements
 
-- Python 3 (no extra libraries needed)
+- Python 3
+- `requests` for the RESTCONF scripts (`python -m pip install requests`)
 
 ## Usage
 
 ```sh
 python network_check.py
 ```
+
+Run the additional scripts from the repository root:
+
+```sh
+python network_inventory.py
+python restconf_monitor.py
+python interface_automation.py
+```
+
+Before running either RESTCONF script, set `RESTCONF_USERNAME` and
+`RESTCONF_PASSWORD` environment variables for the router credentials.
 
 ## Example output
 
