@@ -5,7 +5,7 @@
     "device_type": "Cisco Catalyst 8000V Router",
     "location": "Cisco DevNet Sandbox",
     "status": "UP",
-    "checked_at": "2026-10-03 06:02:23"
+    "checked_at": "2026-10-03 06:12:30"
   },
   {
     "hostname": "R1-HQ",
@@ -13,7 +13,7 @@
     "device_type": "Cisco ISR 4331 Router",
     "location": "Headquarters",
     "status": "UP",
-    "checked_at": "2026-10-03 06:02:23"
+    "checked_at": "2026-10-03 06:12:30"
   },
   {
     "hostname": "SW1-Floor2",
@@ -21,7 +21,7 @@
     "device_type": "Cisco Catalyst 9300 Switch",
     "location": "Building A, Floor 2",
     "status": "UP",
-    "checked_at": "2026-10-03 06:02:23"
+    "checked_at": "2026-10-03 06:12:30"
   },
   {
     "hostname": "R2-Branch",
@@ -29,6 +29,6 @@
     "device_type": "Cisco ISR 1100 Router",
     "location": "Branch Office",
     "status": "DOWN",
-    "checked_at": "2026-10-03 06:02:23"
+    "checked_at": "2026-10-03 06:12:30"
   }
 ]
