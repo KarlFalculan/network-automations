@@ -1,0 +1,39 @@
+{
+  "devices": [
+    {
+      "hostname": "Cat8000-Sandbox",
+      "ip_address": "devnetsandboxiosxec8k.cisco.com",
+      "device_type": "Cisco Catalyst 8000V Router",
+      "location": "Cisco DevNet Sandbox",
+      "port": 443,
+      "mode": "real"
+    },
+    {
+      "hostname": "R1-HQ",
+      "ip_address": "192.168.1.1",
+      "device_type": "Cisco ISR 4331 Router",
+      "location": "Headquarters",
+      "port": 22,
+      "mode": "simulate",
+      "simulated_status": "UP"
+    },
+    {
+      "hostname": "SW1-Floor2",
+      "ip_address": "192.168.1.2",
+      "device_type": "Cisco Catalyst 9300 Switch",
+      "location": "Building A, Floor 2",
+      "port": 22,
+      "mode": "simulate",
+      "simulated_status": "UP"
+    },
+    {
+      "hostname": "R2-Branch",
+      "ip_address": "10.10.10.1",
+      "device_type": "Cisco ISR 1100 Router",
+      "location": "Branch Office",
+      "port": 22,
+      "mode": "simulate",
+      "simulated_status": "DOWN"
+    }
+  ]
+}
